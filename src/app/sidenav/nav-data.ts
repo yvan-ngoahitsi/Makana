@@ -47,6 +47,11 @@ export const navbarData: INavBarData[] = [
         label: 'Statistics'
     },
     {
+        routeLink: 'kanban',
+        icon: 'fas fa-border-all',
+        label: 'Kanban'
+    },
+    {
         routeLink: 'coupens',
         icon: 'fas fa-tags',
         label: 'Coupens',

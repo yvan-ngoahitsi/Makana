@@ -1,7 +1,113 @@
-<h1>Dashboard</h1>
+<!-- <h1>Dashboard</h1>
 <div class="card">
     <div class="card-head">Lorem ipsum - dashboard</div>
     <div class="card-body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
+    </div>
+</div> -->
+
+<h2>Dashboard</h2>
+
+<div [ngClass]="getClass()">
+    <div class="col-left">
+        <div class="card welcome-card">
+            <div class="card-head welcome-head-container">
+                <div class="col-left">
+                    <div>Welcome Back !</div>
+                    <p>Makana Dashboard</p>
+                </div>
+                <div class="col-right">
+                    <img [src]="'assets/profile-bg-3.png'" alt="">
+                </div>
+            </div>
+            <div class="card-body welcome-body-container">
+                <div class="col-left">
+                    <div class="avatar">
+                        <img [src]="'assets/user3.jpg'" alt="">
+                    </div>
+                    <div class="name"> John Kezia</div>
+                    <p>Sofware Developer</p>
+                </div>
+                <div class="col-right">
+                    <div class="perfomance-container">
+                        <div class="performance">
+                            <div>Performance</div>
+                            <div>80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="view-profile">
+                        <button>
+                            View Profile
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col task-col">
+        <div class="task">
+            <span class="bar completed"></span>
+            <div class="details">
+                <div>Completed</div>
+                <p>6 tasks</p>
+            </div>
+            <i class="fas fa-pen edit"></i>
+        </div>
+        <div class="task">
+            <span class="bar active"></span>
+            <div class="details">
+                <div>Active</div>
+                <p>1 task</p>
+            </div>
+            <i class="fas fa-pen edit"></i>
+        </div>
+        <div class="task">
+            <span class="bar new"></span>
+            <div class="details">
+                <div>Assinged</div>
+                <p>12 tasks</p>
+            </div>
+            <i class="fas fa-pen edit"></i>
+        </div>
+        <button>
+            <i class="fas fa-plus"></i>
+            Create New Group
+        </button>
+    </div>
+
+
+</div>
+<div class="card">
+    <div class="card-head">Lorem ipsum -  dashboard</div>
+    <div class="card-body">
+        What is Lorem ?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sunt corporis aperiam, eum repellendus officia delectus dignissimos ipsam error impedit assumenda quod ratione saepe, fugit quasi minima accusantium vero? Debitis!
+
+        Why do we use it?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis, harum assumenda quidem quasi ipsam totam ab? Reiciendis, maxime rem blanditiis asperiores quis fugit nulla porro inventore consequuntur, aspernatur corrupti?
+        
+        Where does it come from?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi delectus incidunt iure? Ab molestias consequatur libero omnis animi vero tempore, voluptatum aperiam maxime cumque, tenetur numquam, totam neque eius?
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="card">
+    <div class="card-head">Lorem ipsum -  dashboard</div>
+    <div class="card-body">
+        What is Lorem ?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sunt corporis aperiam, eum repellendus officia delectus dignissimos ipsam error impedit assumenda quod ratione saepe, fugit quasi minima accusantium vero? Debitis!
+
+        Why do we use it?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis, harum assumenda quidem quasi ipsam totam ab? Reiciendis, maxime rem blanditiis asperiores quis fugit nulla porro inventore consequuntur, aspernatur corrupti?
+        
+        Where does it come from?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi delectus incidunt iure? Ab molestias consequatur libero omnis animi vero tempore, voluptatum aperiam maxime cumque, tenetur numquam, totam neque eius?
     </div>
 </div>

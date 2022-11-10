@@ -16,6 +16,8 @@ import { HeaderComponent } from './header/header.component';
 
 import{ OverlayModule } from '@angular/cdk/overlay';
 import{ CdkMenuModule } from '@angular/cdk/menu';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { KanbanComponent } from './kanban/kanban.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +30,16 @@ import{ CdkMenuModule } from '@angular/cdk/menu';
     MediaComponent,
     SettingsComponent,
     SublevelMenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    KanbanComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     OverlayModule,
-    CdkMenuModule
+    CdkMenuModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

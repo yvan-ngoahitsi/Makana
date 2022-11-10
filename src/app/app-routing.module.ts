@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CoupensComponent } from './coupens/coupens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { KanbanComponent } from './kanban/kanban.component';
 import { MediaComponent } from './media/media.component';
 import { PagesComponent } from './pages/pages.component';
 import { ProductsComponent } from './products/products.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
     loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
   },
   {path: 'statistics', component: StatisticsComponent},
+  {path: 'kanban', component: KanbanComponent},
   { 
     path: 'coupens',
     loadChildren:() => import('./coupens/coupens.module').then(m => m.CoupensModule)

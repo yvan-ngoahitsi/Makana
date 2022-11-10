@@ -1,5 +1,5 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { languages } from './header-dummy-data';
+import { languages, notifications, userItems } from './header-dummy-data';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +15,8 @@ export class HeaderComponent implements OnInit {
   selectedLanguage: any;
 
   languages = languages;
+  notifications = notifications
+  userItems = userItems
 
   constructor() { }
 
