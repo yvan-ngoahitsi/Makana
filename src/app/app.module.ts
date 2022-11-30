@@ -14,6 +14,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { HeaderComponent } from './header/header.component';
 
+
+import {MaterialExampleModule} from 'material.module';
+import {MatListModule} from '@angular/material/list';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import {HttpClientModule} from '@angular/common/http';
+
 import{ OverlayModule } from '@angular/cdk/overlay';
 import{ CdkMenuModule } from '@angular/cdk/menu';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -31,7 +38,7 @@ import { KanbanComponent } from './kanban/kanban.component';
     SettingsComponent,
     SublevelMenuComponent,
     HeaderComponent,
-    KanbanComponent
+    KanbanComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,13 @@ import { KanbanComponent } from './kanban/kanban.component';
     AppRoutingModule,
     OverlayModule,
     CdkMenuModule,
-    DragDropModule
+    DragDropModule,
+    MatNativeDateModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatListModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
