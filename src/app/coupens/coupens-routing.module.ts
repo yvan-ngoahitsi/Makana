@@ -4,14 +4,14 @@ import { CoupensComponent } from './coupens.component';
 import { CouponListComponent } from './coupon-list/coupon-list.component';
 
 const routes: Routes = [
-  {
-    path: 'create',
-    component: CoupensComponent
-  },
-  {
-    path:'list',
-    component: CouponListComponent
-  }
+    {
+        path: 'create',
+        component: CoupensComponent
+    },
+    {
+        path:'list',
+        component: CouponListComponent
+    }
 ];
 
 @NgModule({

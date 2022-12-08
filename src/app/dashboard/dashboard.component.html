@@ -81,18 +81,30 @@
 
 
 </div>
-<div class="card">
-    <div class="card-head">Lorem ipsum -  dashboard</div>
-    <div class="card-body">
-        What is Lorem ?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sunt corporis aperiam, eum repellendus officia delectus dignissimos ipsam error impedit assumenda quod ratione saepe, fugit quasi minima accusantium vero? Debitis!
+        <div class="card">
+            <canvas baseChart class="chart"
+                [data]="lineChartData"
+                [options]="lineChartOptions"
+                [type]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+        <table>
+        <tr>
+            <th *ngFor="let label of lineChartData.labels">{{label}}</th>
+        </tr>
+        <tr *ngFor="let d of lineChartData.datasets; let i=index" [class]="'line-'+i">
+            <td *ngFor="let label of lineChartData.labels; let j=index">{{d && d.data[j]}}</td>
+        </tr>
+        </table>
+        <div class="button-row">
+        <button mat-button mat-raised-button color="primary" (click)="randomize()">Randomize</button>
+        <button mat-button mat-raised-button color="primary" (click)="pushOne()">Push</button>
+        <button mat-button mat-raised-button color="primary" (click)="changeColor()">Recolor</button>
+        <button mat-button mat-raised-button color="primary" (click)="hideOne()">Toggle Series B</button>
+        <button mat-button mat-raised-button color="primary" (click)="changeLabel()">Change Label</button>
+        </div>
 
-        Why do we use it?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis, harum assumenda quidem quasi ipsam totam ab? Reiciendis, maxime rem blanditiis asperiores quis fugit nulla porro inventore consequuntur, aspernatur corrupti?
-        
-        Where does it come from?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi delectus incidunt iure? Ab molestias consequatur libero omnis animi vero tempore, voluptatum aperiam maxime cumque, tenetur numquam, totam neque eius?
-    </div>
 </div>
 
 <br>

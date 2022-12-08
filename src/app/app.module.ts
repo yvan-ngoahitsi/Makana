@@ -9,11 +9,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { PagesComponent } from './pages/pages.component';
 import { MediaComponent } from './media/media.component';
-import { SettingsComponent } from './settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { HeaderComponent } from './header/header.component';
-
 
 import {MaterialExampleModule} from 'material.module';
 import {MatListModule} from '@angular/material/list';
@@ -25,6 +23,7 @@ import{ OverlayModule } from '@angular/cdk/overlay';
 import{ CdkMenuModule } from '@angular/cdk/menu';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { KanbanComponent } from './kanban/kanban.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -35,10 +34,9 @@ import { KanbanComponent } from './kanban/kanban.component';
     StatisticsComponent,
     PagesComponent,
     MediaComponent,
-    SettingsComponent,
     SublevelMenuComponent,
     HeaderComponent,
-    KanbanComponent,
+    KanbanComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +50,8 @@ import { KanbanComponent } from './kanban/kanban.component';
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MaterialExampleModule
+    MaterialExampleModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

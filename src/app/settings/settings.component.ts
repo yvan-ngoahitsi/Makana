@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.scss']
 })
-export class SettingsComponent {
+export class SettingsComponent  {
 
-  // constructor() { }
+   constructor() { }
 
-  // ngOnInit(): void {
-  // }
+  //  ngOnInit(): void {
+  //  }
 
 }
