@@ -1,30 +1,44 @@
 <h1>Pages</h1>
+<!-- <p>Start the video in the first tab and navigate to the second one to see how it keeps playing.</p> -->
+
+<div class="card">
+<mat-card class="demo-inline-calendar-card">
+    <mat-calendar [(selected)]="selected"></mat-calendar>
+  </mat-card>
+<p>Selected date: {{selected}}</p>
+</div>
+
+<div class="card">
+<mat-tab-group preserveContent>
+  <mat-tab label="First">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/S-IQIw7tOB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </mat-tab>
+  <mat-tab label="Second">
+    <iframe
+      width="560"
+      height="315"
+      src="https://youtu.be/S-IQIw7tOB0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <!-- Note how the video from the previous tab is still playing. -->
+   </mat-tab>
+   <mat-tab label="Third">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/B-lipaiZII8"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <!-- Note how the video from the previous tab is still playing. -->
+   </mat-tab>
+</mat-tab-group>
+</div>
 <div class="card">
     <div class="card-head">Lorem ipsum - Pages</div>
-    <div class="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
-    </div>
-</div>
-<div class="card">
-    <div class="card-head">Lorem ipsum - Statistics 1</div>
-    <div class="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
-    </div>
-</div>
-<div class="card">
-    <div class="card-head">Lorem ipsum - Statistics 2</div>
-    <div class="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
-    </div>
-</div>
-<div class="card">
-    <div class="card-head">Lorem ipsum - Statistics 1</div>
-    <div class="card-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
-    </div>
-</div>
-<div class="card">
-    <div class="card-head">Lorem ipsum - Statistics 2</div>
     <div class="card-body">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque obcaecati accusantium exercitationem autem quam necessitatibus, consectetur qui dolores vel labore aperiam aliquid temporibus inventore dicta deleniti sit expedita ab.
     </div>

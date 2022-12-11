@@ -18,23 +18,47 @@ export class MediaComponent {
       updated: new Date('1/1/22'),
     },
     {
-      name: 'Recipes',
+      name: 'Documentaires',
       updated: new Date('1/17/22'),
     },
     {
-      name: 'Work',
+      name: 'WorkShop',
       updated: new Date('1/28/22'),
     },
     {
-      name: 'Worker',
+      name: 'Wango',
       updated: new Date('1/28/22'),
     },
     {
-      name: 'Worked',
+      name: 'Loango',
       updated: new Date('1/28/22'),
     },
+    {
+      name: 'Documentaires',
+      updated: new Date('1/17/22'),
+    },
+    {
+      name: 'WorkShop',
+      updated: new Date('1/28/22'),
+    },
+    {
+      name: 'Wango',
+      updated: new Date('1/28/22'),
+    }
   ];
   notes: Section[] = [
+    {
+      name: 'Vacation Itinerary',
+      updated: new Date('2/20/22'),
+    },
+    {
+      name: 'Kitchen Remodel',
+      updated: new Date('1/18/22'),
+    },
+    {
+      name: 'Kitchen Remodel',
+      updated: new Date('1/18/22'),
+    },
     {
       name: 'Vacation Itinerary',
       updated: new Date('2/20/22'),

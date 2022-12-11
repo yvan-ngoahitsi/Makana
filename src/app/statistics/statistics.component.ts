@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartConfiguration } from 'chart.js';
-import { ChartOptions, ChartType } from "chart.js";
+import { ChartConfiguration, ChartData } from 'chart.js';
+import { ChartOptions,ChartEvent, ChartType } from "chart.js";
 
 
 @Component({
@@ -18,11 +18,11 @@ export class StatisticsComponent{
   title = 'ng2-charts-demo';
 
   // PolarArea
-  public polarAreaChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales' ];
+  public statisticsChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales' ];
   public polarAreaChartDatasets: ChartConfiguration<'polarArea'>['data']['datasets'] = [
     { data: [ 300, 500, 100, 40, 120 ] }
   ];
-  public polarAreaLegend = true;
+  public statisticsAreaLegend = true;
 
   public polarAreaOptions: ChartConfiguration<'polarArea'>['options'] = {
     responsive: false,
@@ -75,6 +75,64 @@ export class StatisticsComponent{
   } ];
   public pieChartLegend = true;
   public pieChartPlugins = [];
+
+  // Doughnut
+  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
+  public doughnutChartData: ChartData<'doughnut'> = {
+    labels: this.doughnutChartLabels,
+    datasets: [
+      { data: [ 350, 450, 100 ] },
+      { data: [ 50, 150, 120 ] },
+      { data: [ 250, 130, 70 ] }
+    ]
+  };
+  public doughnutChartType: ChartType = 'doughnut';
+
+  // // events
+  // public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
+  //   console.log(event, active);
+  // }
+
+  // public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
+  //   console.log(event, active);
+  // }
+
+  // PolarArea
+  public statisticsChartLabel: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail Sales', 'Telesales', 'Corporate Sales' ];
+  public polarAreaChartData: ChartData<'polarArea'> = {
+    labels: this.statisticsChartLabels,
+    datasets: [ {
+      data: [ 300, 500, 100, 40, 120 ],
+      label: 'Series 1'
+    } ]
+  };
+  public statisticsAreaLegend1 = true;
+
+  public polarAreaChartType: ChartType = 'polarArea';
+
+  // events
+  public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
+  public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
+  // Radar
+  public radarChartOptions: ChartConfiguration['options'] = {
+    responsive: true,
+  };
+  public radarChartLabels: string[] = [ 'Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running' ];
+
+  public radarChartData: ChartData<'radar'> = {
+    labels: this.radarChartLabels,
+    datasets: [
+      { data: [ 65, 59, 90, 81, 56, 55, 40 ], label: 'Series A' },
+      { data: [ 28, 48, 40, 19, 96, 27, 100 ], label: 'Series B' }
+    ]
+  };
+  public radarChartType: ChartType = 'radar';
 
   constructor() { }
 

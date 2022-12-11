@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsLevelThreeOneComponent } from './products-level-three-one/products-level-three-one.component';
 import { ProductsLevelThreeTwoComponent } from './products-level-three-two/products-level-three-two.component';
+import {MaterialExampleModule} from 'material.module';
+
 
 const routes: Routes = [
   {
@@ -16,6 +18,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule,MaterialExampleModule]
 })
 export class ProductsRoutingModule { }

@@ -51,7 +51,8 @@ import { NgChartsModule } from 'ng2-charts';
     ReactiveFormsModule,
     MatListModule,
     MaterialExampleModule,
-    NgChartsModule
+    NgChartsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

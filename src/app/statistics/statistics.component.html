@@ -23,18 +23,44 @@
 <div class="card">
     <mat-grid-list cols="4" rowHeight="2:2">
         <mat-grid-tile>
-             Hello 1
+            <canvas baseChart class="chart"
+            [data]="doughnutChartData"
+            [type]="doughnutChartType">
+            </canvas>
         </mat-grid-tile>
         <mat-grid-tile>
-            Hello 2
+            <canvas baseChart class="chart"
+            [data]="polarAreaChartData"
+            [legend]="statisticsAreaLegend1"
+            [type]="polarAreaChartType">
+            </canvas>
         </mat-grid-tile>
         <mat-grid-tile>
-            Hello 3
+            <canvas baseChart class="chart"
+            [data]="doughnutChartData"
+            [type]="doughnutChartType">
+            </canvas>
         </mat-grid-tile>
         <mat-grid-tile>
-            Hello 4
+            <canvas baseChart class="chart"
+            [data]="polarAreaChartData"
+            [legend]="statisticsAreaLegend1"
+            [type]="polarAreaChartType">
+            </canvas>
         </mat-grid-tile>
     </mat-grid-list>
+</div>
+
+<div class="card">
+        <mat-grid-list cols="1" rowHeight="1:1">
+            <mat-grid-tile>
+                <canvas baseChart class="chart"
+                [data]="radarChartData"
+                [options]="radarChartOptions"
+                [type]="radarChartType">
+                </canvas>
+            </mat-grid-tile>
+        </mat-grid-list>
 </div>
   
 <!-- <div [ngClass]="getClass()">
