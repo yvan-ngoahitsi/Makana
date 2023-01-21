@@ -14,7 +14,7 @@
         padding: 0.938rem 0.938rem 0 0.938rem;
         width: 100%;
 
-        .logo img {
+        .logo {
           background: #fff;
           text-align: center;
           width: 3rem;
@@ -100,12 +100,12 @@
         }
    }
 
-//    .sidenav-nav-item:hover{
-//     .sidenav-nav-link{
-//         background-color: #fff;
-//         color: #000;
-//     }
-//    }
+   .sidenav-nav-item:hover{
+    .sidenav-nav-link{
+        background-color: #fff;
+        color: #000;
+    }
+   }
 }
 
 .active{
